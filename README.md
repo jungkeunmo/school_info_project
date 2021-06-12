@@ -12,3 +12,16 @@
     NOOD.JS, PUG, BABEL, MONGODB
     FRAMEWORK : EXPRESS
 </pre>
+
+# Model
+
+## Student
+
+- name(String)
+- gender(String)
+- school(String)
+- grade(Int)
+- ban(Int)
+- birth(String)
+- hobby(String)
+

@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2016/08/02/07/45/the-polygon-1562743_1280.jpg");
+  background-image: url("https://images.unsplash.com/photo-1623393835885-560a7c576aa2?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
 }
 
@@ -20,11 +20,11 @@ body {
 }
 
 .main h1 {
-  font-size: 40px;
+  font-size: 34px;
   color: rgb(70, 70, 70);
   text-shadow: 3px 3px 3px #999;
   font-weight: 700;
-  margin: 0px 0px 200px 0px;
+  margin: 60px 0px 140px 0px;
 }
 
 .main form {
@@ -38,7 +38,7 @@ body {
 }
 
 .main form select {
-  width: 200px;
+  width: 160px;
   height: 35px;
 
   outline: none;
@@ -59,8 +59,8 @@ body {
 }
 
 .main form select:hover {
-  box-shadow: 3px 3px 3px skyblue;
-  color: royalblue;
+  box-shadow: 3px 3px 3px #777;
+  color: #555;
 }
 
 .main form input[type="submit"] {
@@ -74,15 +74,16 @@ body {
   border-radius: 7px;
   background-color: #fff;
 
-  box-shadow: 3px 3px 3px rgb(230, 230, 230);
+  box-shadow: 3px 3px 3px #999;
 
   font-size: 16px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   transition: 0.5s;
   box-shadow: 3px 3px 3px #333;
 }
 
 .main form input[type="submit"]:hover {
-  color: skyblue;
+  color: #777;
+
 }
