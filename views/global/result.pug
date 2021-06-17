@@ -1,4 +1,10 @@
 extends ../globalBase.pug
 
 block content 
-    h1 sadfadfdsf
+    for stu in list 
+            h1 #{stu.name}
+            h1 #{stu.gender}
+            h1 #{stu.school}
+            h1 #{stu.grade} 학년
+            h1 #{stu.ban} 반
+            hr
