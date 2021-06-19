@@ -1,4 +1,50 @@
 extends ../adminBase.pug
 
 block content 
-    h1 sadfadfdsfsadfasdfsdaf
+    p #{msg}
+
+    form(action="/admin/creatStudent" method="POST")
+        div.createBox
+            p 학생이름
+            input(type="text" name="stu_name" required)
+        div.createBox
+            p 성별
+            select(name="stu_gender")
+                option(value=false) --선택--
+                option(value="남성") 남성
+                option(value="여성") 여성 
+        div.createBox    
+            p 학교
+            select(name="stu_school")
+                option(value=false) --선택--
+                option(value="공주북중학교") 공주북중학교
+                option(value="공주여자중학교") 공주여자중학교
+                option(value="공주이인중학교") 공주이인중학교
+                option(value="공주영명중학교") 공주영명중학교
+                option(value="공주봉황중학교") 공주봉황중학교
+        div.createBox
+            p 학년
+            select(name="stu_grade")
+                option(value=false) --선택--
+                option(value="1") 1학년
+                option(value="2") 2학년
+                option(value="3") 3학년
+        div.createBox
+            p 반
+            select(name="stu_class")
+                option(value=false) --선택--
+                option(value="1") 1반
+                option(value="2") 2반
+                option(value="3") 3반
+                option(value="4") 4반
+                option(value="5") 5반
+                option(value="6") 6반
+                option(value="7") 7반
+                option(value="8") 8반
+                option(value="9") 9반
+                option(value="10") 10반    
+        div.createBox
+            p 취미
+            input(type="text" name="stu_hobby" required)              
+        input(type="submit" value="추가하기") 
+            

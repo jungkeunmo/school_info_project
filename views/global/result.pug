@@ -1,10 +1,25 @@
 extends ../globalBase.pug
 
 block content 
-    for stu in list 
-            h1 #{stu.name}
-            h1 #{stu.gender}
-            h1 #{stu.school}
-            h1 #{stu.grade} 학년
-            h1 #{stu.ban} 반
-            hr
+    div.resultTop
+        form(action="/" method="GET")
+            input(type="submit" value="◀️ BACK") 
+    ul.resultList
+        li 이름
+        li 성별
+        li 생년월일
+        li 학교
+        li 학년
+        li 반
+        li 취미
+   
+    each stu in list 
+        ul.dataList
+            li #{stu.name}
+            li #{stu.gender}
+            li #{stu.birth}
+            li #{stu.school}
+            li #{stu.grade} 학년
+            li #{stu.ban} 반
+            li #{stu.hobby}
+            
